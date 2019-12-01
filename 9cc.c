@@ -93,7 +93,7 @@ Node *unary(){
     if (consume('+'))
       return primary();
     if (consume('-'))
-      return new_node(ND_NUM, new_node_num(0), primary());
+      return new_node(ND_SUB, new_node_num(0), primary());
     return primary();
 }
 
